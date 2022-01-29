@@ -1,0 +1,760 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  color: brown;
+  background-color: gray;
+  /* padding: 0 50px; */
+
+
+
+}
+.search{
+  flex-basis: 70%;
+
+}
+.icon{
+  flex-basis: 30%;
+
+}
+.search_icon{
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin-top: 100px;
+
+
+}
+.center{
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    /* height: 400px; */
+    display: block;
+    padding-bottom: 30px;
+
+
+}
+.background{
+  background-color: gray;
+  /* background-color:red; */
+  height: 200px;
+  width: 100%;
+
+
+
+}
+.img img{
+  border-radius: 100%;
+  margin-left: 50px;
+  margin-top: -80px;
+  border: white 3px  solid;
+
+  
+}
+.details{
+  display: flex;
+  width: 100%;
+  margin: 20px;
+
+
+  
+}
+.details1{
+  flex-basis: 60%;
+  /* height: 50px; */
+  /* background-color: green; */
+  /* margin: 10px; */
+
+  
+}
+.details2{
+  flex-basis: 40%;
+  /* height: 50px; */
+  /* background-color: blue; */
+}
+.icon2{
+  width: 100%;
+  text-align: right;
+  /* padding: 10px; */
+  display: block ;
+
+
+}
+.flex1{
+  flex-basis: 50%;
+
+
+}
+.flex2{
+  flex-basis: 47%;
+  background-color: gray;
+  border-radius: 10px;
+
+}
+.box{
+  margin: 3px;
+}
+
+/* dfghjkl;' */
+*{
+  margin: 0;
+  padding: 0;
+}
+.second_background{
+  background-color:red;
+  height: 20rem;
+  width: 45%;
+  margin-top: 3rem;
+  
+}
+/* body {
+  background-color: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.header__left img {
+  object-fit: contain;
+  height: 42px;
+  margin-right: 20px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  justify-content: space-evenly;
+  border-bottom: 0.1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.header__left {
+  display: flex;
+}
+
+.header__right {
+  display: flex;
+}
+
+.header__search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 20px;
+  width: 400px;
+  color: gray;
+  background-color: #eef3f8;
+}
+
+.header__search > input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 600rem;
+}
+
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.headerOption:hover {
+  color: black;
+}
+
+.headerOption h3 {
+  font-size: 12px;
+  margin-top: 10px;
+  
+}
+
+.headerOption__icon {
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+#pencil_icons{
+  padding-left: 100px;
+  margin-top: -3rem;
+}
+#camra_icons{
+  /* padding-left: 780px; */
+  float: right;
+  padding-right: 10px;
+  margin-top: 10px;
+
+}
+/* skills */
+.container-f{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 20px;
+
+}
+.icons-skills{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* The Modal (background) */
+#skillsModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-skills {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 44%; /* Could be more or less, depending on screen size */
+  height: 25%;
+  border: double;
+}
+
+/* The Close Button */
+.close-skills {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-skills:hover,
+.close-skills:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* skills */
+/* eduction_part */
+#eductionModal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-eduction {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 45%; /* Could be more or less, depending on screen size */
+height: 35%;
+border: double;
+}
+
+/* The Close Button */
+.close-eduction {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-eduction:hover,
+.close-eduction:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.icons-eduction{
+/* display: flex; */
+justify-content: space-evenly;
+}
+.eduction_box {
+width: 100px;
+height: 50px;
+}
+.skills_aling{
+display: grid;
+grid-template-columns: 90% 10%;
+padding: 10px ;
+align-items: center;
+}
+#experienceModal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-experience {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 53%; /* Could be more or less, depending on screen size */
+height: 48%;
+border: double;
+}
+
+/* The Close Button */
+.close-experience {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-experience:hover,
+.close-experience:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+#nameModal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+border: double;
+}
+
+
+/* Modal Content/Box */
+.modal-name {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 53%; /* Could be more or less, depending on screen size */
+height: 48%;
+border: double;
+}
+
+/* The Close Button */
+.close-name {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-name:hover,
+.close-name:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* login */
+.flex{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+.sign_up{
+padding: 80px 30px;
+border-radius: 10px;
+background-color: #b0e0e6;
+display: flex;
+flex-direction: column;
+height: auto;
+}
+.sign_up input{
+padding: 5px;
+border-radius: 10px;
+border: none;
+margin: 5px;
+font-size: 30px;
+}
+.login{
+padding: 20px;
+border-radius: 10px;
+background-color: #b0e0e6;
+
+}
+
+#eductionModal2 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-eduction2 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 45%; /* Could be more or less, depending on screen size */
+height: 35%;
+border: double;
+}
+
+/* The Close Button */
+.close-eduction2 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-eduction2:hover,
+.close-eduction2:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.icons-eduction2{
+/* display: flex; */
+justify-content: space-evenly;
+}
+
+#skillsModal2 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-skills2 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 44%; /* Could be more or less, depending on screen size */
+height: 70%;
+border: double;
+}
+
+/* The Close Button */
+.close-skills2 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close-skills2:hover,
+.close-skills2:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+/* pencel icons popup part */
+
+#experienceModal2 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-experience2 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 48%; /* Could be more or less, depending on screen size */
+height: 32%;
+border: double;
+}
+
+/* The Close Button */
+.close-experience2 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-experience2:hover,
+.close-experience2:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+
+#experienceModal3{
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-experience3 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 45%; /* Could be more or less, depending on screen size */
+height: 90%;
+border: double;
+}
+
+/* The Close Button */
+.close-experience3 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-experience3:hover,
+.close-experience3:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+
+#experienceModal4{
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-experience4 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 20%; /* Could be more or less, depending on screen size */
+height: 25%;
+border: double;
+}
+
+/* The Close Button */
+.close-experience4 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-experience4:hover,
+.close-experience4:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+/* education popup3 */
+
+#eductionModal3 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-eduction3 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 52%; /* Could be more or less, depending on screen size */
+height: 130%;
+border: double;
+}
+
+/* The Close Button */
+.close-eduction3 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-eduction3:hover,
+.close-eduction3:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.icons-eduction3{
+/* display: flex; */
+justify-content: space-evenly;
+}
+/* popup4 */
+#eductionModal4 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-eduction4 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 15%; /* Could be more or less, depending on screen size */
+height: 15%;
+border: double;
+}
+
+/* The Close Button */
+.close-eduction4 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-eduction4:hover,
+.close-eduction4:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.icons-eduction4{
+/* display: flex; */
+justify-content: space-evenly;
+}
+/* popup5 ---------------------------------------------------*/
+#eductionModal5 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100vw; /* Full width */
+height: 100vh; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-eduction5 {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 40%; /* Could be more or less, depending on screen size */
+height: 25%;
+border: double;
+}
+
+/* The Close Button */
+.close-eduction5 {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close-eduction5:hover,
+.close-eduction5:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.icons-eduction5{
+/* display: flex; */
+justify-content: space-evenly;
+}
