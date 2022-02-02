@@ -1,8 +1,34 @@
 import React from 'react';
 
-function Profile() {
-    return (
 
+function closename() { 
+    let  modal = document.getElementById("nameModal");
+    modal.style.display = "none"; 
+    // document.getElementById("mainName").innerHTML = first_name + " " + last_name;
+   
+    
+  }
+  
+  function  name_add()  {
+    let a=document.getElementById("first_name").value;  
+    let b=document.getElementById("last_name").value; 
+    let id=localStorage.getItem('id')
+  
+    fetch("/name", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'} ,
+        body: JSON.stringify({first_name:a,last_name:b,userid:id})
+      }).then(res => {
+        console.log("Request complete! response:", res);
+        location.reload();
+  
+      });
+  }
+
+function Profile() {
+
+
+    return (
         <div>
             <div className="background">
 
@@ -13,7 +39,7 @@ function Profile() {
                     height="150px" />
             </div>
 
-            <i onclick="name()" style={{float: "right", marginRight: "30px", marginTop: "-30px"}}className="fas fa-pencil-alt"></i>
+            <i  onClick={name}  style={{float: "right", marginRight: "30px", marginTop: "-30px"}}className="fas fa-pencil-alt"></i>
 
 
             <div className="icon2"></div>
@@ -24,7 +50,7 @@ function Profile() {
 
 
                     <h4 style={{fontSize: "18px"}}>
-                        Chatrapati Sahuji Maharaj <br>Kanpur University, Kanpur</br>
+                        Chatrapati Sahuji Maharaj <br/>Kanpur University, Kanpur<br/>
                         <h4 style={{color: "blue", fontSize: "18px"}}>
                             Contact infor
                         </h4>
@@ -52,7 +78,7 @@ function Profile() {
 
                     </div>
                     <div>
-                        <a href=""> Chatrapati Sahuji Maharaj<br> Kanpur University, Kanpur </br></a>
+                        <a href=""> Chatrapati Sahuji Maharaj<br/> Kanpur University, Kanpur <br/></a>
                     </div>
 
                 </div>
@@ -78,7 +104,7 @@ function Profile() {
 
 
                 <div className="modal-name">
-                    <span onclick="closename()" className="close-skills">&times;</span>
+                    <span  onClick={closename} className="close-skills">&times;</span>
                     <div style={{fontSize: "25px", paddingLeft: "10px",fontStyle: "italic"}}>
                         Add Intro
                         <div style={{fontSize:"22px",marginTop: "10px"}}>
@@ -112,8 +138,8 @@ function Profile() {
                                 </div>
                             </div>
                         </div>
-                        <div onclick="name_add()"
-                            style={{float: "right",marginTop: "10px", backgroundColor: "blue", borderRadius: "20px", color: "white", fontSize: "1.3rem", padding: "5px  10px",aligntems: "center", marginight: "20px"}}>
+                        <div onClick={name_add} 
+                            style={{float: "right",marginTop: "10px", backgroundColor: "blue", borderRadius: "20px", color: "white", fontSize: "1.3rem", padding: "5px  10px",alignItems: "center", marginRight: "20px"}}>
                             save
                         </div>
 

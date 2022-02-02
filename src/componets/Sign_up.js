@@ -1,4 +1,23 @@
 import React from 'react';
+function Add_user() {
+    let a=document.getElementById("first_name").value;  
+    let b=document.getElementById("last_name").value;
+    let c=document.getElementById("Email").value;
+    let d=document.getElementById("password").value;
+    let e=document.getElementById("phonenumber").value;
+      fetch("/users", {
+          method: "POST",
+          headers: {'Content-Type': 'application/json'} ,
+          body: JSON.stringify({first_name:a,last_name:b,email:c,password:d,PhoneNumber:e})
+        }).then((response) => {
+          return response.json()}).then((data) =>{
+         console.log("Request complete! response:", data);
+         
+           localStorage.setItem('id', data._id)
+           location.replace('/profile/'+data._id);
+            
+       });
+  }
 
 function Sign_up() {
     return (
@@ -14,7 +33,7 @@ function Sign_up() {
                     <input id="Email" type="text" placeholder="Email" />
                     <input id="phonenumber" type="text" placeholder="phonenumber" />
                     <input id="password" type="text" placeholder="password" />
-                    <input onclick="Add_user()" type="button" value="Submit" name="Submit" />
+                    <input  onClick={Add_user} type="button" value="Submit" name="Submit" />
                 </div>
 
 
